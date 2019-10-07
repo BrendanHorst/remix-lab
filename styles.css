@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+.about > p {
+  color: gray;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 6rem;
+  padding-top: 1rem;
+}
+
+.landing {
+  background-image: url("https://cposc.org/wp-content/uploads/2018/02/homepage-hero.jpg");
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.landing > p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.when,
+.where {
+  background-color: #768591;
+  max-width: 404px;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.where {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 404px){
+  .when,
+  .where {
+    width: 404px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
