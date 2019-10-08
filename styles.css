@@ -10,8 +10,18 @@ html {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 }
 
-.about > p {
-  color: gray;
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #393939;
+  color: white;
+}
+
+header img {
+  height: 33px;
+  width: 130.766px;
 }
 
 h1 {
@@ -19,6 +29,170 @@ h1 {
   font-weight: normal;
   margin-bottom: 6rem;
   padding-top: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+img {
+  width: 95%;
+  margin: 1rem 2.5%;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  background-color: #3d3d3d;
+}
+
+nav a {
+  display: block;
+  border-bottom: thin solid #35aadc;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #35aadc87;
+  opacity: 50%;
+}
+
+.about > p {
+  color: gray;
+  margin: 3rem 1rem;
+  font-size: 1.2rem;
+}
+
+.about section {
+  margin: 0 1rem 3rem 1rem;
+}
+
+.codeofconduct {
+  margin-left: 2rem;
+}
+
+.codeofconduct h3 {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.connect {
+  background-color: #24648c;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.connect a {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: url("http://cposc.org/wp-content/themes/Tyler/images/icons-lg.png")no-repeat top left;
+  background-size: 480px auto;
+  margin: 1rem 0;
+}
+
+.connect a:hover {
+  background-color: #3f3f3f;
+  border-radius: 50%;
+}
+
+.connect a.email {
+  background-position: -240px 0;
+}
+
+.connect a.facebook {
+  background-position: -180px -120px;
+}
+
+.connect a.twitter {
+  background-position: -300px -120px;
+}
+
+.connect a.linkedin {
+  background-position: -180px -60px;
+}
+
+.connect h2 {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+.connect ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .connect {
+  margin-top: 3rem;
+  background-color: #393939;
+  margin-bottom: 5rem;
+}
+
+footer .connect a {
+  width: 40px;
+  height: 40px;
+  background: none;
+  margin: 1rem;
+}
+
+footer .connect a.twitter {
+  content: url("https://cposc.org/wp-content/uploads/2016/09/social-tw.png");
+}
+
+footer .connect a.facebook {
+  content: url("https://cposc.org/wp-content/uploads/2016/09/social-fb.png");
+}
+
+footer .connect a.linkedin {
+  content: url("https://cposc.org/wp-content/uploads/2016/09/social-in.png");
+}
+
+footer .connect a.github {
+  content: url("https://cposc.org/wp-content/uploads/2016/10/social-git.png");
+}
+
+footer .connect ul {
+  justify-content: flex-start;
+}
+
+.copyright {
+  background-color: #313131;
+  color: #24648c;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.codeofconduct a,
+.copyright a {
+  color: #768591;
+}
+
+.codeofconduct a:hover,
+.copyright a:hover {
+  text-decoration: underline;
+  color: #24648c;
+}
+
+.fake-button {
+  height: 46px;
+  width: 46px;
+  background: url("http://cposc.org/wp-content/themes/Tyler/images/icons-lg.png")no-repeat top left;
+  background-size: 480px auto;
+  background-color: #768591;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-position: -45px -166px;
 }
 
 .landing {
@@ -34,16 +208,87 @@ h1 {
   margin-bottom: 4rem;
 }
 
+.sponsors {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.sponsors a.join {
+  background-color: #768591;
+  color: white;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+}
+
+.sponsors a.join:hover {
+  background-color: #24648c;
+}
+
+.sponsors .afterparty {
+  padding-bottom: 6rem;
+}
+
+.sponsors h2 {
+  font-size: 2rem;
+}
+
+.sponsors h3 {
+  margin-top: 2rem;
+  color: #24648c;
+  border-bottom: thin solid #24648c;
+  margin-right: 2.5%;
+}
+
+.sponsors p {
+  color: gray;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+}
+
 .when,
 .where {
   background-color: #768591;
   max-width: 404px;
   margin: 1rem;
   padding: 2rem;
+  display: flex;
+}
+
+.when .icon,
+.where .icon {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: url("http://cposc.org/wp-content/themes/Tyler/images/icons-lg.png")no-repeat top left;
+  background-size: 480px auto;
+}
+
+.when h3,
+.where h3 {
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 
 .where {
   margin-bottom: 4rem;
+}
+
+.where .icon {
+  background-position: -300px 0;
+}
+
+.where .building {
+  display: block;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 404px){
@@ -53,5 +298,12 @@ h1 {
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px){
+  header img {
+    width: 237.766px;
+    height: 60px;
   }
 }
