@@ -302,8 +302,34 @@ footer .connect ul {
 }
 
 @media screen and (min-width: 768px){
+
   header img {
     width: 237.766px;
     height: 60px;
+  }
+
+  .fake-button {
+    top: 25px;
+    right: 25px;
+  }
+
+  .landing {
+    font-size: 24px;
+  }
+
+  .sponsors a.join {
+    position: static;
+  }
+
+  .sponsors > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .sponsors p {
+    width: 50%;
+  }
+  .where .building {
+    font-size: 1.5em;
   }
 }
