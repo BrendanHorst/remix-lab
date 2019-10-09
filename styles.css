@@ -209,8 +209,8 @@ footer .connect ul {
 }
 
 .sponsors {
-  margin-left: 1rem;
   position: relative;
+  margin-left: 1rem;
 }
 
 .sponsors a.join {
@@ -252,6 +252,14 @@ footer .connect ul {
   color: gray;
   margin: 2rem auto;
   font-size: 1.2rem;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 .when,
@@ -308,6 +316,11 @@ footer .connect ul {
     height: 60px;
   }
 
+  main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   .fake-button {
     top: 25px;
     right: 25px;
@@ -326,10 +339,33 @@ footer .connect ul {
     align-items: center;
   }
 
+  .sponsors img {
+    width: 345px;
+  }
+
   .sponsors p {
     width: 50%;
+  }
+
+  .sponsors div {
+    display: flex;
+    align-items: center;
+  }
+
+  .sponsors section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsors h3 {
+    align-self: stretch;
   }
   .where .building {
     font-size: 1.5em;
   }
+}
+
+@media screen and (min-width: 992px) {
+  
 }
