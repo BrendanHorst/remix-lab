@@ -429,7 +429,7 @@ footer .connect ul {
 
   footer div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -438,6 +438,7 @@ footer .connect ul {
   }
 
   footer section.connect {
+    margin-left: 0;
     margin-right: 0;
     width: auto;
   }
