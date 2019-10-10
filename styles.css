@@ -96,13 +96,69 @@ nav a:hover {
 }
 
 .connect {
-  background-color: #24648c;
-  width: 90%;
   margin: 0 auto;
   border-radius: 5px;
 }
 
-.connect a {
+aside.connect li {
+  width: 20%;
+  height: 12rem;
+}
+
+aside.connect a.email {
+  background-color: #ffbd45;
+  border-bottom: 1rem solid orange;
+}
+
+aside.connect a.email:hover {
+  border-color: #b95e00;
+}
+
+aside.connect a.facebook {
+  background-color: #5050ff;
+  border-bottom: 1rem solid blue;
+}
+
+aside.connect a.facebook:hover{
+  border-color: #00005f;
+}
+
+aside.connect a.twitter {
+  background-color: #5eecec;
+  border-bottom: 1rem solid #00c1c1;
+}
+
+aside.connect a.twitter:hover {
+  border-color: #006161;
+}
+
+aside.connect a.linkedin {
+  background-color: #69d6f9;
+  border-bottom: 1rem solid #00c1ff;
+}
+
+aside.connect a.linkedin:hover {
+  border-color: #006586;
+}
+
+aside.connect a.github {
+  background-color: #c1c1c1;
+  border-bottom: 1rem solid #9e9e9e;
+}
+
+aside.connect a.github:hover {
+  border-color: #525252;
+}
+
+aside.connect a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside.connect a span.logo-sheet {
   display: block;
   height: 60px;
   width: 60px;
@@ -111,29 +167,28 @@ nav a:hover {
   margin: 1rem 0;
 }
 
-.connect a:hover {
-  background-color: #3f3f3f;
-  border-radius: 50%;
-}
-
-.connect a.email {
+aside.connect a.email span {
   background-position: -240px 0;
 }
 
-.connect a.facebook {
+aside.connect a.facebook span {
   background-position: -180px -120px;
 }
 
-.connect a.twitter {
+aside.connect a.twitter span{
   background-position: -300px -120px;
 }
 
-.connect a.linkedin {
+aside.connect a.linkedin span{
   background-position: -180px -60px;
 }
 
+aside.connect a.github span {
+  content: url("https://cposc.org/wp-content/uploads/2016/10/social-git.png");
+}
+
 .connect h2 {
-  color: white;
+  color: black;
   text-align: center;
   font-weight: lighter;
   text-transform: uppercase;
@@ -416,35 +471,9 @@ footer .connect ul {
     font-size: 1.5em;
   }
 
-  aside.connect {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  aside.connect div::before {
-    display: inline-block;
-    content: "";
-    height: 60px;
-    width: 60px;
-    background: url("http://cposc.org/wp-content/themes/Tyler/images/icons-lg.png")no-repeat top left;
-    background-size: 480px auto;
-    background-position: 0 -110px;
-    margin-left: 2rem;
-  }
-
-  aside.connect div {
-    display: flex;
-    align-items: center;
-  }
-
   aside.connect h2 {
     padding: 0;
     margin: 0;
-  }
-
-  aside.connect ul {
-    margin-right: 8rem;
   }
 
   footer div {
