@@ -117,7 +117,7 @@ nav a:hover {
 
 aside.connect li {
   width: 20%;
-  height: 12rem;
+  height: 10rem;
 }
 
 aside.connect a.email {
@@ -429,7 +429,8 @@ footer .connect ul {
 
 @media screen and (min-width: 768px) {
 
-  main {
+  aside.connect,
+  .about div:last-of-type {
     max-width: 768px;
     margin: 0 auto;
   }
@@ -539,7 +540,8 @@ footer .connect ul {
     background-color: transparent;
   }
 
-  main {
+  aside.connect,
+  about div:last-of-type {
     max-width: 992px;
   }
 
