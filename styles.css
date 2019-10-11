@@ -504,18 +504,28 @@ footer .connect ul {
 
   footer div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   footer article.codeofconduct {
     width: 300px;
+    margin-right: 10%;
   }
 
   footer section.connect {
-    margin-left: 0;
+    margin-left: 5%;
     margin-right: 0;
     width: auto;
+    order: -1;
+  }
+
+  footer section.connect ul {
+    flex-direction: column;
+  }
+
+  footer section.connect ul a {
+    margin: 0;
   }
 
   footer article.codeofconduct h3 {
