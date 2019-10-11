@@ -308,7 +308,7 @@ footer .connect ul {
 }
 
 .sponsors a.join {
-  background-color: #768591;
+  background-color: #24648c;
   color: white;
   display: block;
   width: 300px;
@@ -321,10 +321,11 @@ footer .connect ul {
   bottom: 2rem;
   left: 0;
   right: 0;
+  transition: background-color .3s;
 }
 
 .sponsors a.join:hover {
-  background-color: #24648c;
+  background-color: #24648ca6;
 }
 
 .sponsors .afterparty {
@@ -429,7 +430,6 @@ footer .connect ul {
 
 @media screen and (min-width: 768px) {
 
-  aside.connect,
   .about div:last-of-type {
     max-width: 768px;
     margin: 0 auto;
@@ -540,7 +540,6 @@ footer .connect ul {
     background-color: transparent;
   }
 
-  aside.connect,
   about div:last-of-type {
     max-width: 992px;
   }
@@ -565,8 +564,15 @@ footer .connect ul {
 
   .sponsors img {
     width: 50%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 5px 0;
+  }
+
+  .sponsors h3 {
+    margin-top: 10px;
+  }
+
+  .sponsors section.afterparty {
+    padding-bottom: 1rem;
   }
 
   .not-sponsors {
@@ -577,11 +583,12 @@ footer .connect ul {
     width: 30%;
     margin-left: 0;
     padding-left: 1rem;
+    background-color: #e8e8e8;
   }
 
   .sponsors h2 {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .sponsors p {
