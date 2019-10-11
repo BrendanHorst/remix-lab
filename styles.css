@@ -564,6 +564,32 @@ footer .connect ul {
   }
 
   .sponsors img {
-    width: 293px;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .not-sponsors {
+    width: 70%;
+  }
+
+  .sponsors {
+    width: 30%;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  .sponsors h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sponsors p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  main {
+    display: flex;
   }
 }
